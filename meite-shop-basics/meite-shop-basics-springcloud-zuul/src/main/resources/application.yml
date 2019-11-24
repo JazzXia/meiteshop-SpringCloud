@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: app-qtatelier-zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8100/eureka
+
+#配置网关反向代理即路由转发
+zuul:
+  routes:
+    api-a:
+      #以/api-weixin/访问转发到会员服务
+      path: /api-weixin/**
+      serviceId: app-qtatelier-weixin
+    api-b:
+      path: /api-member/**
+      serviceId: app-qtatelier-member

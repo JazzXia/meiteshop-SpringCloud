@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="meite-shop-basics-springcloud-eureka" />
+        <module name="meite-shop-basics-springcloud-zuul" />
+        <module name="meite-shop-service-api-member" />
+        <module name="meite-shop-service-api-weixin" />
+        <module name="meite-shop-service-api-weixin-entity" />
+        <module name="meite-shop-service-member" />
+        <module name="meite-shop-service-weixin" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="meite-shop-basics-springcloud-eureka" options="-parameters" />
+      <module name="meite-shop-basics-springcloud-zuul" options="-parameters" />
+      <module name="meite-shop-service-api-member" options="-parameters" />
+      <module name="meite-shop-service-api-weixin" options="-parameters" />
+      <module name="meite-shop-service-api-weixin-entity" options="-parameters" />
+      <module name="meite-shop-service-impl" options="-parameters" />
+      <module name="meite-shop-service-member" options="-parameters" />
+      <module name="meite-shop-service-weixin" options="-parameters" />
+    </option>
+  </component>
+</project>
